@@ -1,0 +1,41 @@
+
+
+<form #loginForm="ngForm">
+    <div style="position: relative;left: 400px;top: 45px">
+        <p-dropdown [options]="languages" name="language" optionLabel="name" optionValue="code"
+                [(ngModel)]="selectedLanguage" #name_id="ngModel" 
+                (onChange)="changeLanguage()">
+            <ng-template let-language pTemplate="item">
+                    <div>{{language.name}}</div>
+            </ng-template>
+        </p-dropdown>
+    </div>
+    <p-panel header="{{labelData.header}}">
+        <div class="p-field">
+            <div class="p-mb-2">{{ labelData.userName}}</div>
+            <div>
+                <input type="text" pInputText ngModel name="name" id="name" [(ngModel)]="model.userName" #username="ngModel" 
+                required autofocus minlength="4" 
+                pTooltip="{{ labelData.userNameToolTip}}" />
+                <small class="p-error" *ngIf="submitted && !model.userName">{{ labelData.userNameToolTip }}</small>
+            </div>
+            <div class="p-text-left p-mt-3 p-mb-2">{{ labelData.password}}</div>
+            <div>
+                <input type="password" pInputText ngModel name="password" [(ngModel)]="model.password" #password="ngModel" 
+                required minlength="5" 
+                pTooltip="{{ labelData.passwordToolTip}}" />
+                <small class="p-error" *ngIf="submitted && !model.password">Password is required.</small>
+            </div>
+            <div class="p-text-left p-mt-3 p-mb-2">{{ labelData.loginHelpText}}</div>
+            <div class="p-mt-3 p-mr-3">
+                <button pButton pRipple label="{{ labelData.loginButtonText}}" class="p-button" (click)="login()" [disabled]="loginForm.invalid"></button>
+            </div> 
+            <div class="p-mt-3 p-mr-3">
+                <a [routerLink]="['/login/register']" class="btn btn-link p-mr-5">{{labelData.registerText}}</a>
+            </div>
+            <div class="p-mt-3 p-mr-3">
+                <a [routerLink]="['/login/forget-password']" class="btn btn-link" >{{labelData.forgotPassword}}</a>
+            </div> 
+        </div>
+    </p-panel>
+    </form>

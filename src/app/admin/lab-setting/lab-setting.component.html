@@ -1,0 +1,20 @@
+<p-panel header="Caresphere LIS UI">
+  <ng-template pTemplate="left">
+      <div class="p-d-flex ">
+          Caresphere LIS UI home
+      </div>
+  </ng-template>
+
+  <ng-template pTemplate="right">
+      <button pButton pRipple label="Log out" class="p-button" (click)="logout()"></button>
+  </ng-template>
+</p-panel>
+<p-dialog [(visible)]="showConfim" header="Confirmation" [style]="{width: '400px', height: '230px', background: 'lightGray'}">
+    <div class="ng-tns-c47-6 p-dialog-content" style="height: 85px;">
+        <p _ngcontent-iuk-c51="" class="ng-tns-c47-6">Are you sure you want to log out?</p>
+    </div>    
+    <div class="p-dialog-footer ng-tns-c47-6 ng-star-inserted" style="height: 45px;">
+        <p-button _ngcontent-iuk-c51="" label="No" styleclass="p-button-text" class="ng-star-inserted" (click)="cancelDialog()"></p-button>
+        <p-button _ngcontent-iuk-c51="" label="Yes" styleclass="p-button-text" class="ng-star-inserted" (click)="confirmDialog()"></p-button>
+    </div>
+</p-dialog>

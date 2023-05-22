@@ -1,12 +1,13 @@
-import { TestBed, async } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { TestBed, async, waitForAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { AuthenticationService } from './_services/authentication.service';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      declarations: [ AppComponent],
+      imports: [HttpClientTestingModule]
     }).compileComponents();
   }));
 

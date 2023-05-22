@@ -1,0 +1,12 @@
+ {
+    "title": "Login",
+    "header": "Login",
+    "userName": "User code",
+    "userNameToolTip": "Please enter your user name (minimum 4 characters)",
+    "password": "Password",
+    "passwordToolTip": "Please enter your password (minimum 5 characters)",
+    "loginHelpText": "Help text will be here if any",
+    "loginButtonText": "Login",
+    "registerText": "Register",
+    "forgotPassword": "Forgot password"
+}

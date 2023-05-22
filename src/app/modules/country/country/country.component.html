@@ -1,0 +1,23 @@
+
+  <div  *ngFor="let country of countries$">
+    <div class="media">
+      <img src="{{country.flag}}" class="p-mr-3" alt="..." width="60" height="30">
+      <div class="media-body">
+        <p class="p-mt-0">{{ country.name }}</p>
+      </div>
+    </div>
+  </div>
+  <div >
+      <button mat-button (click)="search()">Async Load</button>
+  </div>
+
+<div *ngIf="countryList$">
+  <div  *ngFor="let country of countryList$ | async">
+    <div class="media">
+      <img src="{{country.flag}}" class="p-mr-3" alt="..." width="60" height="30">
+      <div class="media-body">
+        <p class="p-mt-0">{{ country.name }}</p>
+      </div>
+    </div>
+  </div>
+</div>

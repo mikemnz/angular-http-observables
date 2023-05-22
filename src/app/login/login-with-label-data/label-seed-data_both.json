@@ -1,0 +1,26 @@
+{
+    "loginForm": {
+        "title": "Login",
+        "header": "Login",
+        "userName": "User code",
+        "userNameToolTip": "Please enter your user name (minimum 4 characters)",
+        "password": "Password",
+        "passwordToolTip": "Please enter your password (minimum 5 characters)",
+        "loginHelpText": "Help text will be here if any",
+        "loginButtonText": "Login",
+        "registerText": "Register",
+        "forgotPassword": "Forgot password"
+    },
+    "loginFormInMalayalam": {
+        "title": "ലോഗിൻ",
+        "header": "ലോഗിൻ",
+        "userName": "ഉപയോക്തൃ കോഡ്",
+        "userNameToolTip": "ദയവായി നിങ്ങളുടെ ഉപയോക്തൃ നാമം നൽകുക (കുറഞ്ഞത് 4 പ്രതീകങ്ങൾ)",
+        "password": "Password",
+        "passwordToolTip": "നിങ്ങളുടെ പാസ്‌വേഡ് നൽകുക (കുറഞ്ഞത് 5 പ്രതീകങ്ങൾ)",
+        "loginHelpText": "സഹായ വാചകം ഉണ്ടെങ്കിൽ ഇവിടെ ഉണ്ടാകും",
+        "loginButtonText": "ലോഗിൻ",
+        "registerText": "രജിസ്റ്റർ ചെയ്യുക",
+        "forgotPassword": "പാസ്വേഡ് മറന്നോ"
+    }
+}

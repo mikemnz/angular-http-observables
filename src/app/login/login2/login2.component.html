@@ -1,0 +1,17 @@
+<div class="p-mb-2">User Name</div>
+<div>
+    <input type="text"  id="name" [(ngModel)]="model.userName" required autofocus />
+    <small class="p-error" *ngIf="submitted && !model.userName">Name is required.</small>
+</div>
+<div class="p-text-left p-mt-3 p-mb-2">Password</div>
+<div>
+    <input type="password"  id="password" [(ngModel)]="model.password" required autocomplete="off" />
+    <small class="p-error" *ngIf="submitted && !model.password">Password is required.</small>
+</div>
+<div class="p-mt-3 p-mr-3">
+    <input type='button' id='btnLogin' value="Login" (click)="login()">
+</div> 
+<div class="p-mt-3 p-mr-3">
+    <a [routerLink]="['/login/register']" class="btn btn-link">Register</a>
+    <a [routerLink]="['/login/forget-password']" class="btn btn-link" class="p-ml-2">Forget password</a>
+</div> 
